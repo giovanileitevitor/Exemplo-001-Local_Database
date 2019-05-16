@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Exemplo BD LocaL - Registro de Contatos</string>
+    <string name="action_new_contact">Novo Contado</string>
+</resources>
