@@ -11,7 +11,9 @@ Packages:
 - VIEW
 	
 Detalhes:
-- O aplicativo possui duas telas (activities) sendo elas Tela Inicial e Tela de Cadastro/Edição
+- O aplicativo possui duas telas (activities) sendo elas ListaActivity e DetalheActivity.
+
+
 
 
 
