@@ -10,9 +10,8 @@ Packages:
 - MODEL
 - VIEW
 	
-
-Tela Inicial
-Tela de cadastro de dados no banco
+Detalhes:
+- O aplicativo possui duas telas (activities) sendo elas Tela Inicial e Tela de Cadastro/Edição
 
 
 
