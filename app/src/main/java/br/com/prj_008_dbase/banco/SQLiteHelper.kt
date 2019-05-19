@@ -3,6 +3,7 @@ package br.com.prj_008_dbase.banco
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 import java.lang.Exception
 import java.lang.StringBuilder
 
@@ -39,6 +40,8 @@ class SQLiteHelper(
 
         } catch (ex: Exception){
             // Registro
+            Log.e("DB_ERROR", "DATAB BASE ERROR")
+
         }
     }
 
@@ -58,6 +61,7 @@ class SQLiteHelper(
             onCreate(db)
         } catch (ex: Exception){
             // Registro
+            Log.e("DB_ERROR", "DATAB BASE ERROR")
         }
     }
 }
