@@ -10,9 +10,10 @@ Packages:
 - MODEL
 - VIEW
 	
+Detalhes:
+- O aplicativo possui duas telas (activities) sendo elas ListaActivity e DetalheActivity.
 
-Tela Inicial
-Tela de cadastro de dados no banco
+
 
 
 
