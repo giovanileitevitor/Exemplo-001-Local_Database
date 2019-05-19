@@ -3,9 +3,18 @@ Exemplo de Estrutura de armazenamento de dados em BD Local com SQLite
 
 Estrutura no padrão MVC.
 
-
+Packages: 
+- BANCO
+- DAO
+- EXTENSIONS
+- MODEL
+- VIEW
 	
 
-Tela InicialTela de cadastro de dados no banco
-
+Tela Inicial
+Tela de cadastro de dados no banco
+
+
+
+
 
