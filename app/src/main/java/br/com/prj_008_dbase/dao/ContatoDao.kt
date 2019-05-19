@@ -20,6 +20,7 @@ class ContatoDao(
         val IDADE = "idade"
     }
 
+    //Função para inserir contatos no banco
     fun inserirContato(contato: Contato) {
         abrirBanco()
 
@@ -35,6 +36,7 @@ class ContatoDao(
         fecharBanco()
     }
 
+    //Função para editar um contato apartir do contato
     fun alterarContato(contato: Contato) {
         abrirBanco()
 
@@ -53,6 +55,7 @@ class ContatoDao(
         fecharBanco()
     }
 
+    //Função para excluir um contato apartir do ID
     fun excluirContato(idcontato: Long) {
         abrirBanco()
 
@@ -64,6 +67,7 @@ class ContatoDao(
         fecharBanco()
     }
 
+    //função para Obter o contato apartir do ID do ListView
     fun obterContatoByID(idcontato: Long): Contato? {
         var cAux: Contato? = null
 
@@ -96,6 +100,7 @@ class ContatoDao(
         return cAux
     }
 
+    //Função para obter a Lista de contatos
     fun obterListaContatos(): ArrayList<HMAux> {
         var contatos = ArrayList<HMAux>()
 
@@ -128,6 +133,7 @@ class ContatoDao(
         return contatos
     }
 
+    //Função para pegar o proximo ID válido
     fun proximoID(): Long {
         var proID: Long = -1L
 

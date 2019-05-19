@@ -40,7 +40,7 @@ class SQLiteHelper(
 
         } catch (ex: Exception){
             // Registro
-            Log.e("DB_ERROR", "DATAB BASE ERROR")
+            Log.e("DB_ERROR", "DATAB BASE ERROR:" + ex)
 
         }
     }
@@ -61,7 +61,7 @@ class SQLiteHelper(
             onCreate(db)
         } catch (ex: Exception){
             // Registro
-            Log.e("DB_ERROR", "DATAB BASE ERROR")
+            Log.e("DB_ERROR", "DATAB BASE ERROR:" + ex)
         }
     }
 }

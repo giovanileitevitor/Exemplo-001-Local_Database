@@ -37,9 +37,13 @@ class ListaActivity : AppCompatActivity() {
         context = this@ListaActivity
         contatoDao = ContatoDao(context)
 
-        val De = arrayOf(HMAux.NOME) // onde esta a informacao
-        val Para = intArrayOf(android.R.id.text1) // onde deve ser colocada a informacao
+        //Variavel que armazena onde está a informação (De)
+        val De = arrayOf(HMAux.NOME)
 
+        //Variavel que armazena onde será colocada a informação (Para)
+        val Para = intArrayOf(android.R.id.text1)
+
+        //Inicializa o Simple adapter passando os parametros básicos
         main_lv_contatos.adapter = SimpleAdapter(
             context,
             contatoDao.obterListaContatos(),
@@ -50,27 +54,28 @@ class ListaActivity : AppCompatActivity() {
     }
 
     private fun initActions() {
+        //Trata o OnClick no elemento do ListView
         main_lv_contatos.setOnItemClickListener { parent, view, position, id ->
 
+            //Recebe a posição (id) do item clicado
             var item = parent.getItemAtPosition(position) as HMAux
 
+            //Chama a função passando o objeto a ser usado na tela seguinte (Tela Detalhes)
             chamarTelaDetalhes(item[HMAux.ID]!!.toLong())
         }
     }
 
     fun chamarTelaDetalhes(idcontato: Long){
-        var mIntent = Intent(
-            context,
-            DetalheActivity::class.java
-        )
+        //Configura a Intent a ser chamada
+        var mIntent = Intent(context, DetalheActivity::class.java)
 
-        mIntent.putExtra(
-            DetalheActivity.PARAMETRO_IDCONTATO,
-            idcontato
-        )
+        //Recebo o id do item e repassa como 'EXTRA' para a intent a ser carregada
+        mIntent.putExtra(DetalheActivity.PARAMETRO_IDCONTATO, idcontato)
 
+        //Incializa a activity
         startActivity(mIntent)
 
+        //Encerra a activity atual
         finish()
     }
 

@@ -10,6 +10,7 @@ open class Dao(
     protected var db: SQLiteDatabase? = null
 
     fun abrirBanco() {
+        //Seta os parametros da Classe SQLiteHelper para abertura do BD
         var dbHelper = SQLiteHelper(
             context,
             Constantes.BANCO,
